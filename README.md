@@ -8,18 +8,18 @@ API Endpoints are:
 
 GET <IP>:8080/node/docker -- gets running docker containers
 Example response: 
--  {
+[ {
         "container": "bcac22e04d1a",
         "image": "portainer/agent:2.17.0",
         "command": "\"./agent\"",
         "created": "4 days ago",
         "status": "Up 4 days"
     }
-
+]
 
 GET <IP>:8080/node/stats  -- gets the stats of RaspberryPi
 Example response:
--  {
+[  {
     "temp": {
         "temp": "115.16000000000001'F"
     },
@@ -38,3 +38,4 @@ Example response:
         ]
     }
 }
+]
